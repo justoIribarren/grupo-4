@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalima Joyas</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+    <header>
+
+        <a class="logo" href="./index.html">
+            <img src="./imagenes/logo_kalima.jpg" alt="">
+        </a>
+        <nav class="nav">
+            <div class="nav__container">
+                <ul class="nav__ul" id="nav__ul">
+                    <li class="nav__link"><a href="./index.html">INICIO</a></li>
+                    <li class="nav__link"><a href="./index.html#productos">PRODUCTOS</a></li>
+                    <li class="nav__link"><a href="./index.html#contacto">CONTACTO</a></li>
+                    <li class="nav__link"><a href="#">PREGUNTAS FRECUENTES</a></li>
+                    <button class="close" id="close"><i class="fa-solid fa-xmark"></i></button>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="utilities">
+
+            <button class="botonCarrito"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"id="verCarrito"><i class="fa-solid fa-cart-shopping"></i></button>
+            <a href="./perfil.html"><i class="fa-solid fa-user"></i> </a>
+            <button id="open" class="open"><i class="fa-solid fa-bars"></i> </button>
+
+            <div class="offcanvas offcanvas-end carrito" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id = "carritoProductos"></div>
+                <div class="offcanvas-footer">
+                    <div class="divTotal">
+                        <h4>TOTAL: </h4>
+                        <h4>$<span id="total">0</span></h4>
+                    </div>
+                    <button class="btn btn-dark">INICIAR COMPRA</button>
+                    <button class="btn btn-danger" id="vaciarCarrito">Vaciar Carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main> 
+        
+        
+    <div id="preguntas-frecuentes">
+        <h4 class="titulo">Preguntas Frecuentes</h4>
+        <div class="contenido-preguntas-frecuentes">
+            <h6 id="como-comprar">COMO COMPRAR</h6>
+            <p>- Seleccioná la categoría que querés ver. Elegí el producto que te interese con las variantes disponibles (color, cantidad, etc.) clickeando en "AGREGAR AL CARRITO". Podés repetir este paso la cantidad de veces que quieras con otros productos.</p>
+            <p>- Cuando termines de elegir todo lo que querés, vas a tu carrito de compras y una vez calculado el costo de envío con el código postal, haces click en <b>INICIAR COMPRA.</b></p>
+            <p>- Luego de escribir los datos de envío, seleccionar el método de pago y completar los datos de facturación. </p>
+            <p>-  <b>MERCADOPAGO: </b>Podés pagar con el dinero en tu cuenta, tarjeta de crédito, débito o en efectivo en un RapiPago o Pago Fácil</p>
+            <p>- <b>COMPRAS CON TRANSFERENCIA BANCARIA: </b>Una vez realizada la compra te va a llegar un mail con los datos para realizar la transferencia. Es <b>IMPORTANTE</b> enviar una foto del comprobante de la transferencia vía mail (joyaskalima@gmail.com)</p>
+            <br>
+            <h6 id="envios">ENVÍOS</h6>
+            <p>Realizamos envíos a todo el país por Correo Argentino (el costo de envío depende exclusivamente de la zona de la compra)</p>
+            <br>
+            <h6 id="cuidados">COMO CUIDAR LOS ACCESORIOS</h6>
+            <p><b>Cristales</b></p>
+            <ul>
+                <li>
+                    <p>- Evitar el uso de productos químicos para limpiar los cristales</p>
+                </li>
+                <li>
+                    <p>- Sacarse las piezas antes de aplicar productos cosméticos en el cuerpo</p>
+                </li>
+                <li>
+                    <p>- Evitar el contacto con el agua</p>
+                </li>
+                <li>
+                    <p>- Evitar impactos fuertes que puedan causar rayones, ranuras y otros daños</p>
+                </li>
+            </ul>
+            <h6><b>Cadenas</b></h6>
+            <h7>Plata 925</h7>
+            <ul>
+                <li>
+                    <p>- Se puede mojar y no altera su color</p>
+                </li>
+                <li>
+                    <p>- Si con el tiempo se pone negra, recupera su color al limpiarla</p>
+                </li>
+            </ul>
+            <h7>Acero Blanco</h7>
+            <ul>
+                <li>
+                    <P>- No se puede mojar para evitar que se le vaya el baño que tiene</P>
+                </li>
+                <li>
+                    <p>- Guardar en bolista en lugares oscuros para evitar que se ponga negra</p>
+                </li>
+            </ul>
+            <h7>Acero Inoxidable</h7>
+            <ul>
+                <li>
+                    <p>- Se puede mojar y exponer al sol, no cambia su color o apariencia</p>
+                </li>
+                <li>
+                    <p>- Es hipoalergénica</p>
+                </li>
+            </ul>
+            <br>
+            <h6 id="compras-por-mayor">COMPRAS POR MAYOR</h6>
+            <p>Si estás interesado en comprar por mayor mandanos un mail o un mensaje y te enviamos el catálogo mayorista.</p>
+            <p>La compra mínima por mayor es de <b>10 CRISTALES SURTIDOS</b>.</p>
+            <h6 id="cambios">POLÍTICA DE CAMBIOS</h6>
+            <ul>
+                <li>- Para realizar el cambio, contás con 30 días para realizar los cambios luego de realizada tu compra. El producto no debe estar usado y debe conservar su etiqueta original, empaque, factura o postal de cambio.</li>
+                <li>- El valor que tendrás a disposición para el cambio es el valor abonado en el momento de realizar la compra.</li>
+                <li>- <b>NO</b> aceptamos cambios de productos que hayan sido usados.</li>
+                <li>- Los gastos de envío por cambios correrán por cuenta del cliente.</li>
+                <li>- Para gestionar un cambio comunicarse vía mail indiciacando mlos detalles del cambio.</li>
+            </ul>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="redes">
+                <a href="#"><img src="../imagenes/logo_instagram.svg" alt="logo instagram" class="logo_instagram"></a>
+                <a href="#"><img src="../imagenes/logo_whatsapp.svg" alt="logo whatsapp" class="logo_whatsapp"></a>
+            </div>
+            <div class="contenido-footer">
+                <div class="ayuda-footer">
+                    <ul>
+                        <li><b>Ayuda</b></li>
+                        <li><a href="#como-comprar">Como Comprar</a></li>
+                        <li><a href="#envios">Envíos</a></li>
+                        <li><a href="#cuidados">Cuidados</a></li>
+                        <li><a href="#compras-por-mayor">Compras Por Mayor</a></li>
+                        <li><a href="#cambios">Política De Cambios</a></li>
+                    </ul>
+                </div>
+                <div class="contacto-footer">
+                    <ul>
+                        <li><b>Contactanos</b></li>
+                        <li>+54(11) 2463-0729</li>
+                        <li>joyaskalima@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./src/js/menu.js"></script>
+    
+</body>
+</html>
